@@ -49,6 +49,7 @@ function showAbout () {
   $(portfolio).hide();
   $(blog).hide();
   $(content).hide();
+  menuSlide ();
 }
 
 function showPortfolio () {
@@ -57,6 +58,7 @@ function showPortfolio () {
   $(portfolio).show();
   $(blog).hide();
   $(content).hide();
+  menuSlide ();
 }
 
 function showBlog () {
@@ -65,6 +67,7 @@ function showBlog () {
   $(portfolio).hide();
   $(blog).show();
   $(content).hide();
+  menuSlide ()
 }
 
 function showContent () {
@@ -73,6 +76,7 @@ function showContent () {
   $(portfolio).hide();
   $(blog).hide();
   $(content).show();
+  menuSlide ();
 }
 
 //GALLERY
