@@ -1229,6 +1229,7 @@ footer .footer span {
   margin: 10px 0 0 40px;
 }
 #content #info_and_inputs .container .inputs input {
+  padding: 0 10px;
   width: 45%;
   height: 15%;
   border: 1px solid #ebebeb;
@@ -1240,6 +1241,7 @@ footer .footer span {
   border-left: 3px solid #9c9c9c;
 }
 #content #info_and_inputs .container .inputs textarea {
+  padding: 0 10px;
   border: 1px solid #ebebeb;
   margin: 10px 0 10px 10px;
   width: 92%;
@@ -1252,7 +1254,6 @@ footer .footer span {
   border-top: 3px solid #9c9c9c;
 }
 #content #info_and_inputs .container .inputs ::-webkit-input-placeholder {
-  padding-left: 10px;
   font-style: italic;
 }
 #content #info_and_inputs .container .inputs button {
