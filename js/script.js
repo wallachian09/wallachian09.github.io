@@ -36,6 +36,8 @@ function menuSlide () {
 }
 
 function showHome () {
+  menuRight -= 65;
+  rightMenu.style.right = menuRight + '%';
   $(main).show();
   $(about).hide();
   $(portfolio).hide();
