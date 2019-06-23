@@ -44,7 +44,6 @@
 }
 
 body {
-    width: 100%;
     header {
         #fluidmenu {
             display: none;
@@ -58,13 +57,13 @@ body {
             list-style-type: none;
             .navbar-brand {
                 margin-top: .9rem;
-                margin-right: 0 !important;
+                margin-right: 0;
             }
             li  {
                 padding: 0 31.7px;
-                font-weight: bold !important;
-                text-transform: uppercase !important;
-                font-size: .9em !important;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: .9em;
                 letter-spacing: 2px;
                 a {
                     transition: 1s ease;
@@ -105,13 +104,14 @@ body {
             }
         }
         #work, .container-fluid {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: 0;
+            margin-right: 0;
             .row {
-                margin-left: 0 !important;
-                margin-right: 0 !important;
+                margin-left: 0;
+                margin-right: 0;
                 overflow: hidden;
                 .anim {
                     position: absolute;
@@ -122,8 +122,8 @@ body {
                 }
                 .col-8 {
                     width: 100%;
-                    padding-left: 0 !important;
-                    padding-right: 0 !important;
+                    padding-left: 0;
+                    padding-right: 0;
                     .logo {
                         position: absolute;
                         bottom: 40%;
@@ -144,10 +144,10 @@ body {
                     }
                 }
                 .col-4 {
-                    width: 100% !important;
+                    width: 100%;
                     background-color: white;
-                    padding-left: 0 !important;
-                    padding-right: 0 !important;
+                    padding-left: 0;
+                    padding-right: 0;
                     .wrap  {
                         height: 110%;
                     }
@@ -218,9 +218,6 @@ body {
                         border: 30px solid transparent;
                         border-top: 20px solid white;
                     }
-                }
-                .first {
-
                 }
             }
         }
@@ -712,7 +709,7 @@ body {
                 text-align: center;
                 justify-content: space-evenly;
                 ul {
-                    flex-direction: column;
+                    flex-direction: row;
                     padding-top: 5%;
                 }
                 li {
@@ -734,8 +731,8 @@ body {
                     padding-left: 10%;
                     transition: .5s ease;
                     img {
-                        padding-top: 8%;
-                        width: 90px;
+                        padding-top: 15%;
+                        width: 70px;
                     }
                 }
                 a:focus {
@@ -773,10 +770,8 @@ body {
         }
         #work {
             .row {
-                width: 100%;
                 .col-8 {
                     max-width: 100%;
-                    max-height: auto;
                     .logo, .logo3 {
                         width: 20%;
                         left: 40% !important;
