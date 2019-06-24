@@ -773,18 +773,19 @@ body #preloader .loading .gif {
     z-index: 7;
   }
   header #header #fluidmenu {
+    width: 100%;
     height: 100px;
     overflow: hidden;
     background-image: url(../img/layerop.jpg);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -795,11 +796,10 @@ body #preloader .loading .gif {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 5%;
   }
   header #header #fluidmenu li {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: bold !important;
     text-transform: uppercase !important;
     font-size: .9em !important;
@@ -813,13 +813,12 @@ body #preloader .loading .gif {
     color: black;
   }
   header #header #fluidmenu a {
-    padding-left: 10%;
     -webkit-transition: .5s ease;
     transition: .5s ease;
   }
   header #header #fluidmenu a img {
-    padding-top: 15%;
-    width: 70px;
+    padding-top: 2%;
+    width: 60px;
   }
   header #header #fluidmenu a:focus {
     -webkit-transform: rotate(720deg);
