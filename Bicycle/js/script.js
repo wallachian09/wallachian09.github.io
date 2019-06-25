@@ -6,6 +6,20 @@ window.onload = function() {
     }); }, 3200);
 };
 
+$(function() {
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) { 
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+     
+    $('#toTop').click(function() {
+        $('body,html').animate({scrollTop:0},800);
+    });
+});
+
 $(document).ready(function () {
     $('a[href^="#"]').click(function () {
         var target = $(this).attr('href');
@@ -32,6 +46,8 @@ $(document).ready(function(){
     $('.wheel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
+        prevArrow: '<div>&#9650</div>' ,
+        nextArrow: '<div>&#9660</div>',
         vertical: true,
         verticalSwiping: true,
         infinite: true,
@@ -53,8 +69,6 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    vertical: true,
-                    verticalSwiping: true,
                     infinite: true,
                 }
             }
