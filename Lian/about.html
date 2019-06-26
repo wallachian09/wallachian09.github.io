@@ -21,7 +21,7 @@
             <a id="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
             <nav>
                 <ul class="nav" id="navbar">
-                    <li id="bhome" type="none" onclick="showHome()"><a href="#home">home</a></li>
+                    <li id="bhome" type="none" onclick="showHome()"><a href="index.html">home</a></li>
                     <li id="babout" type="none" onclick="showAbout()"><a href="about.html">about</a></li>
                     <li type="none" onclick="showPortfolio()"><a href="portfolio.html">portfolio</a></li>
                     <li type="none" onclick="showBlog()"><a href="blog.html">blog</a></li>
@@ -33,8 +33,8 @@
     </header>
     <menu id="leftMenu" style="background: url(img/menubghome.jpg); background-size: cover;">
         <ul>
-            <li type="none"><a href="#home" onclick="showHome()">home</a></li>
-            <li type="none"><a href="about.html" onclick="showAbout()">about</a></li>
+            <li type="none"><a href="index.html" onclick="showHome()">home</a></li>
+            <li type="none"><a href="#about" onclick="showAbout()">about</a></li>
             <li type="none"><a href="portfolio.html" onclick="showPortfolio()">portfolio</a></li>
             <li type="none"><a href="blog.html" onclick="showBlog()">blog</a></li>
             <li type="none" style="border-bottom: 1px solid silver;"><a href="contact.html" onclick="showContent()">contact</a></li>
@@ -68,127 +68,72 @@
         </ul>
     </menu>
     <main>
-        <div id="home">
-            <section id="slides">
-                <div id="slider_wrapper">
-                    <article id="first_slider">
-                        <img src="img/bgslide1.jpg" alt="slide1">
-                            <div class="company-name">
-                                lian creative agency
-                            </div>
-                            <p>minimal freelance portfolio </p>
-                    </article>
-                    <article id="second_slider">
-                        <img src="img/bgslide2.jpg" alt="slide1">
-                            <div class="company-name">
-                                design & branding
-                            </div>
-                            <p>we deliver quality results</p>
-                    </article>
-                </div>
-                <button id="left" onclick="sliderLeft()"><span><</span></button>
-                <button id="right" onclick="sliderRight()"><span>></span></button>
-            </section>
-            <section id="second_menu">
-                <div class="container">
-                    <nav>
-                        <ul class="shortnav">
-                            <li type="none"><a href="#all">all</a></li>
-                        </ul>
-                        <ul id="navbar">
-                            <li type="none"><a href="#all" style="color: black">all</all></a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#logo">logo</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#mobile_app">mobile app</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#wordpress">wordpress</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#web_design">web design</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#ui/ix">ui/ix</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#branding">branding</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
-            <section id="gallery">
-                <div class="container">
-                    <div class="first_col">
-                        <a href="#fc1"><img src="img/fc1.jpg" alt="fc1"></a>
-                        <a href="#fc2"><img src="img/fc2.jpg" alt="fc2"></a>
-                        <a href="#fc3"><img src="img/fc3.jpg" alt="fc3"></a>
-                    </div>
-                    <div class="second_col">
-                        <a href="#sc1"><img src="img/sc1.jpg" alt="sc1"></a>
-                        <a href="#sc2"><img src="img/sc2.jpg" alt="sc2"></a>
-                        <a href="#sc3"><img src="img/sc3.jpg" alt="sc3"></a>
-                        <a href="#sc4"><img src="img/sc4.jpg" alt="sc4"></a>
-                    </div>
-                    <div class="third_col">
-                        <a href="#tc1"><img src="img/tb1.jpg" alt="tc1"></a>
-                        <a href="#tc2"><img src="img/tb2.jpg" alt="tc2"></a>
-                        <a href="#tc3"><img src="img/tb3.jpg" alt="tc3"></a>
-                    </div>
-                </div>
-                <button onclick="showSC()">load more</button>
-            </section>
-        </div>
-        <div id="portfolio">
-            <section id="projectimg">
+        <div id="about">
+            <section id="welcomeimg">
                 <figure>
-                    <img src="img/proj1.png" alt="project">
+                    <img src="img/about1.png" alt="about">
                 </figure>
                 <div class="container">
-                    <div class="project-name">latest projects</div>
-                    <p>we deliver quality</p>
+                    <div class="about-name">about the agency</div>
+                    <p>welcome to lian</p>
                 </div>
             </section>
-            <section id="second_menu">
-                    <div class="container">
-                        <nav>
-                            <ul class="shortnav">
-                                <li type="none"><a href="#all">all</a></li>
-                            </ul>
-                            <ul id="navbar">
-                                <li type="none"><a href="#all">all</all></a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#logo">logo</a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#mobile_app">mobile app</a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#wordpress">wordpress</a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#web_design">web design</a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#ui/ix">ui/ix</a></li>
-                                <div class="slash">/</div>
-                                <li type="none"><a href="#branding">branding</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-            </section>
-            <section id="gallery">
+            <section id="storyskills">
                 <div class="container">
-                    <div class="first_col">
-                        <a href="#fc1"><img src="img/fc1.jpg" alt="fc1"></a>
-                        <a href="#fc2"><img src="img/fc2.jpg" alt="fc2"></a>
-                        <a href="#fc3"><img src="img/fc3.jpg" alt="fc3"></a>
-                    </div>
-                    <div class="second_col">
-                        <a href="#sc1"><img src="img/sc1.jpg" alt="sc1"></a>
-                        <a href="#sc2"><img src="img/sc2.jpg" alt="sc2"></a>
-                        <a href="#sc3"><img src="img/sc3.jpg" alt="sc3"></a>
-                        <a href="#sc4"><img src="img/sc4.jpg" alt="sc4"></a>
-                    </div>
-                    <div class="third_col">
-                        <a href="#tc1"><img src="img/tb1.jpg" alt="tc1"></a>
-                        <a href="#tc2"><img src="img/tb2.jpg" alt="tc2"></a>
-                        <a href="#tc3"><img src="img/tb3.jpg" alt="tc3"></a>
+                    <div class="features">
+                        <figure class="workers">
+                            <img src="img/about2.jpg" alt="workers">
+                        </figure>
+                        <div class="text">
+                            <span>our story</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima et cum sunt vero ducimus, totam quasi dolores dolor necessitatibus! Asperiores sint, aut at voluptates saepe est ipsam, ad nihil, libero explicabo esse.</p>
+                            <p class="secondP">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem.</p>
+                            <span class="storyS">our skills</span>
+                            <div class="ranges">
+                                <span>photoshop</span>
+                                <div class="range"><div class="photoshop"><div class="circle"><div class="static">90%</div></div></div></div>
+                                <span>branding</span>
+                                <div class="range"><div class="branding"><div class="circle"><div class="static">95%</div></div></div></div>
+                                <span>photography</span>
+                                <div class="range"><div class="photography"><div class="circle"><div class="static">50%</div></div></div></div>
+                                <span>web design</span>
+                                <div class="range"><div class="webdesign"><div class="circle"><div class="static">85%</div></div></div></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button onclick="showSC()">load more</button>
+            </section>
+            <section id="awteam_head">
+                <span>awesome team</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem libero reiciendis quis itaque quos eos, velit et voluptates, iusto modi molestiae rem dolorem accusantium mollitia blanditiis obcaecati suscipit sunt, similique veritatis! Dolor, cupiditate?</p>
+            </section>
+            <section id="awteam_foot">
+                <div class="container">
+                        <div class="employee">
+                            <img src="img/pot.png" alt="LJ"><br>
+                            <div class="awteam_text">
+                                <span>lian joy</span>
+                                <h4>CEO/Founder</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti error eveniet cumque omnis ratione iusto placeat necessitatibus!</p>
+                            </div>
+                        </div>
+                        <div class="employee">
+                            <img src="img/pot2.png" alt="LJ"><br>
+                            <div class="awteam_text">
+                                <span>albert thanh</span>
+                                <h4>CEO/Founder</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti error eveniet cumque omnis ratione iusto placeat necessitatibus!</p>
+                            </div>
+                        </div>
+                        <div class="employee">
+                            <img src="img/pot3.png" alt="LJ"><br>
+                            <div class="awteam_text">
+                                <span>jenn pereira</span>
+                                <h4>CEO/Founder</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae corrupti error eveniet cumque omnis ratione iusto placeat necessitatibus!</p>
+                            </div>
+                        </div>
+                </div>
             </section>
         </div>
     </main>

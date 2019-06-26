@@ -21,9 +21,9 @@
             <a id="logo" href="index.html"><img src="img/logo.png" alt="logo"></a>
             <nav>
                 <ul class="nav" id="navbar">
-                    <li id="bhome" type="none" onclick="showHome()"><a href="#home">home</a></li>
+                    <li id="bhome" type="none" onclick="showHome()"><a href="index.html">home</a></li>
                     <li id="babout" type="none" onclick="showAbout()"><a href="about.html">about</a></li>
-                    <li type="none" onclick="showPortfolio()"><a href="portfolio.html">portfolio</a></li>
+                    <li type="none" onclick="showPortfolio()"><a href="#portfolio">portfolio</a></li>
                     <li type="none" onclick="showBlog()"><a href="blog.html">blog</a></li>
                     <li type="none" onclick="showContent()"><a href="contact.html">contact</a></li>
                 </ul>
@@ -33,9 +33,9 @@
     </header>
     <menu id="leftMenu" style="background: url(img/menubghome.jpg); background-size: cover;">
         <ul>
-            <li type="none"><a href="#home" onclick="showHome()">home</a></li>
+            <li type="none"><a href="index.html" onclick="showHome()">home</a></li>
             <li type="none"><a href="about.html" onclick="showAbout()">about</a></li>
-            <li type="none"><a href="portfolio.html" onclick="showPortfolio()">portfolio</a></li>
+            <li type="none"><a href="#portfolio" onclick="showPortfolio()">portfolio</a></li>
             <li type="none"><a href="blog.html" onclick="showBlog()">blog</a></li>
             <li type="none" style="border-bottom: 1px solid silver;"><a href="contact.html" onclick="showContent()">contact</a></li>
             <hr class="hr">
@@ -68,73 +68,6 @@
         </ul>
     </menu>
     <main>
-        <div id="home">
-            <section id="slides">
-                <div id="slider_wrapper">
-                    <article id="first_slider">
-                        <img src="img/bgslide1.jpg" alt="slide1">
-                            <div class="company-name">
-                                lian creative agency
-                            </div>
-                            <p>minimal freelance portfolio </p>
-                    </article>
-                    <article id="second_slider">
-                        <img src="img/bgslide2.jpg" alt="slide1">
-                            <div class="company-name">
-                                design & branding
-                            </div>
-                            <p>we deliver quality results</p>
-                    </article>
-                </div>
-                <button id="left" onclick="sliderLeft()"><span><</span></button>
-                <button id="right" onclick="sliderRight()"><span>></span></button>
-            </section>
-            <section id="second_menu">
-                <div class="container">
-                    <nav>
-                        <ul class="shortnav">
-                            <li type="none"><a href="#all">all</a></li>
-                        </ul>
-                        <ul id="navbar">
-                            <li type="none"><a href="#all" style="color: black">all</all></a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#logo">logo</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#mobile_app">mobile app</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#wordpress">wordpress</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#web_design">web design</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#ui/ix">ui/ix</a></li>
-                            <div class="slash">/</div>
-                            <li type="none"><a href="#branding">branding</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </section>
-            <section id="gallery">
-                <div class="container">
-                    <div class="first_col">
-                        <a href="#fc1"><img src="img/fc1.jpg" alt="fc1"></a>
-                        <a href="#fc2"><img src="img/fc2.jpg" alt="fc2"></a>
-                        <a href="#fc3"><img src="img/fc3.jpg" alt="fc3"></a>
-                    </div>
-                    <div class="second_col">
-                        <a href="#sc1"><img src="img/sc1.jpg" alt="sc1"></a>
-                        <a href="#sc2"><img src="img/sc2.jpg" alt="sc2"></a>
-                        <a href="#sc3"><img src="img/sc3.jpg" alt="sc3"></a>
-                        <a href="#sc4"><img src="img/sc4.jpg" alt="sc4"></a>
-                    </div>
-                    <div class="third_col">
-                        <a href="#tc1"><img src="img/tb1.jpg" alt="tc1"></a>
-                        <a href="#tc2"><img src="img/tb2.jpg" alt="tc2"></a>
-                        <a href="#tc3"><img src="img/tb3.jpg" alt="tc3"></a>
-                    </div>
-                </div>
-                <button onclick="showSC()">load more</button>
-            </section>
-        </div>
         <div id="portfolio">
             <section id="projectimg">
                 <figure>
