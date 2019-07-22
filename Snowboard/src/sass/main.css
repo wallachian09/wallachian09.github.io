@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-extrabold.otf");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../fonts/proximanova-semibold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'ProximaNova';
+}
+
+body header {
+  position: relative;
+  background-color: #000000;
+  z-index: 90;
+}
+
+body header .navbar-brand {
+  padding-top: 1%;
+  padding-bottom: 1.5%;
+  padding-left: 5%;
+  padding-right: 2%;
+}
+
+body header .navbar-brand img {
+  width: 120%;
+}
+
+body header li {
+  margin-top: 2%;
+  margin-left: 0.2px;
+  margin-right: 3%;
+}
+
+body header li a {
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff !important;
+}
+
+body header form {
+  margin-right: 6%;
+  color: #ffffff;
+}
+
+body header form .form-control {
+  width: 0px !important;
+  padding: 0rem;
+  border: 1px solid #000000;
+  background-color: #0a1223;
+}
+
+body header form .form-control:focus {
+  background-color: #0a1223;
+}
+
+body header form .mr-sm-2 {
+  margin-right: 0rem !important;
+}
+
+body header form .btn {
+  border: 1px solid #000000;
+  color: white !important;
+  margin-ight: 5px;
+}
+
+body header form .btn img {
+  padding-top: 10px;
+}
+
+body header form .btn .bagg {
+  margin-left: 10px;
+  margin-bottom: 5px !important;
+}
+
+body header form .btn:focus .form-control {
+  width: 100%;
+}
+
+body header form .btn:hover {
+  background-color: none;
+}
+
+body header form .mon {
+  padding-top: 10px;
+  padding-left: 10px;
+  color: white !important;
+}
+
+body main .slider__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main .slider__slides .slide_one {
+  display: none;
+  z-index: 87;
+}
+
+body main .slider__slides .slide_one .slide__background {
+  position: absolute;
+  left: 0px;
+  top: 102px;
+  width: 100%;
+}
+
+body main .slider__slides .slide_one .slide_textblack {
+  font-weight: 400;
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 50%;
+  position: absolute;
+  left: -360.562px;
+  top: 425.54px;
+  z-index: 72;
+}
+
+body main .slider__slides .slide_one .action_one {
+  position: absolute;
+  left: 702px;
+  top: 124px;
+  width: 481px;
+  height: 499px;
+  z-index: 73;
+}
+
+body main .slider__slides .slide_one .details {
+  position: absolute;
+  border: none;
+  left: 834px;
+  top: 688px;
+  width: 171px;
+  text-transform: uppercase;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  padding: 1% 0;
+  color: white !important;
+  background-color: black;
+  z-index: 74;
+}
+
+body main .slider__slides .slide_one .details:hover {
+  background-color: #ffffff;
+  color: black !important;
+}
+
+body main .slider__slides .slide_two .slide__background {
+  position: absolute;
+  left: 0px;
+  top: 102px;
+  width: 100%;
+}
+
+body main .slider__slides .slide_two .slide_textwhite {
+  font-weight: 400;
+  font-size: 90px;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin: 0 50%;
+  position: absolute;
+  color: white;
+  left: -325.562px;
+  top: 350.54px;
+  z-index: 72;
+}
+
+body main .slider__slides .slide_two .action_two {
+  position: absolute;
+  left: 948px;
+  top: 209px;
+  width: 590px;
+  height: 581px;
+  z-index: 73;
+}
+
+body main .slider__slides .slide_two .details {
+  position: absolute;
+  border: none;
+  left: 868px;
+  top: 608px;
+  width: 171px;
+  text-transform: uppercase;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  padding: 1% 0;
+  color: white !important;
+  background-color: black;
+  z-index: 74;
+}
+
+body main .slider__slides .slide_two .details:hover {
+  background-color: #ffffff;
+  color: black !important;
+}
+
+body main .sliderShop {
+  width: 100%;
+  margin-top: 46%;
+  padding-top: 11%;
+  background-color: white;
+  position: absolute;
+  text-align: center;
+}
+
+body main .sliderShop .title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+body main .sliderShop .title h2 {
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+body main .sliderShop .cross {
+  padding-top: 1.5%;
+  width: 36px;
+}
+
+body main .sliderShop .slider__boards {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .sliderShop .slider__boards .slide__board {
+  width: 100%;
+  height: 100%;
+  max-width: 191px;
+  max-height: 463px;
+}
+
+body main .sliderShop .subtitle {
+  margin-top: 6%;
+  font-size: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+body main .about {
+  margin-top: 90%;
+}
+/*# sourceMappingURL=main.css.map */
