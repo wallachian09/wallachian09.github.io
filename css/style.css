@@ -29,7 +29,7 @@ body .projects {
           flex-direction: row;
 }
 body .projects .project {
-  width: 70%;
+  width: 80%;
   margin: 5% 5%;
   padding: 5% 0;
   border: 2px solid #a2a7bc;
@@ -53,6 +53,7 @@ body .projects .project .demo a img {
 }
 @media screen and (min-width: 315px) and (max-width: 600px) {
   body .projects .project {
+    margin: 3% 3%;
     padding: 2% 0;
   }
   body .projects .project h3 {
