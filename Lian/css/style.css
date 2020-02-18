@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+.clicked {
+  background-color: black;
+  color: white !important;
+  border: none !important;
+}
 #grad {
   color: linear-gradient(#7722bd, #c32669, #db8c3f);
 }
@@ -62,6 +67,7 @@ menu {
 }
 #home #slides {
   overflow: hidden;
+  max-height: 785px;
 }
 #home #slides button {
   display: block;
@@ -98,20 +104,41 @@ menu {
   margin-left: 91%;
 }
 #home #slides #slider_wrapper {
-  width: 100%;
+  /* width: 100%;
   display: flex;
   position: relative;
   margin-bottom: -300px;
-  left: 0;
+  left: 0; */
   transition: all ease 2s;
 }
+
+#home #slides #slider_wrapper {
+  max-height: 885px;
+}
+
 #home #slides #slider_wrapper #first_slider img {
-  width: 1349px;
+  width: 100%;
+}
+
+#home #slides #slider_wrapper .company_desc{
+  position:absolute;
+}
+#home #slides #slider_wrapper #first_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 890px;
+}
+#home #slides #slider_wrapper #second_slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 890px;
 }
 #home #slides #slider_wrapper .company-name {
-  position: relative;
-  left: 28%;
-  bottom: 500px;
+  /* position: relative; */
+  /* left: 28%; */
+  /* bottom: 500px; */
   color: white;
   background-color: black;
   width: 590px;
@@ -121,25 +148,25 @@ menu {
   font-size: 2.3em;
   text-transform: uppercase;
   text-align: center;
-  padding-top: -2px;
-  padding-left: 5px;
+  /* padding-top: -2px;
+  padding-left: 5px; */
   font-stretch: condensed;
   letter-spacing: 8px;
 }
 #home #slides #slider_wrapper p {
-  position: relative;
+  /* position: relative; */
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 5px;
-  bottom: 480px;
+  /* bottom: 480px; */
   font-weight: 200px;
   z-index: 1;
 }
 #home #slides #slider_wrapper #second_slider img {
-  width: 1349px;
-  height: 91.5%;
+  width: 100%;
+  /* height: 91.5%; */
 }
 #home #second_menu {
   background-color: #fafafa;
@@ -364,6 +391,11 @@ footer .footer span {
   background-color: rgba(240, 240, 242, 0.6);
   justify-content: flex-end;
 }
+#about #welcomeimg .about-title {
+  position: relative;
+  bottom: 280px;
+  text-align: left;
+}
 #about #welcomeimg .about-name {
   font-family: 'Roboto light', sans-serif;
   font-size: 2.3em;
@@ -373,17 +405,14 @@ footer .footer span {
   padding-left: 5px;
   font-stretch: condensed;
   letter-spacing: 8px;
-  position: relative;
   background-color: black;
-  bottom: 280px;
   color: white;
   width: 550px;
   height: 50px;
 }
 #about #welcomeimg p {
-  position: relative;
-  bottom: 250px;
-  right: 390px;
+  margin-top: 25px;
+  padding-left: 60px; 
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
@@ -534,11 +563,25 @@ footer .footer span {
 }
 #about #awteam_foot .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
+#about #awteam_foot .container .team-slider {
+  margin:0 auto;
+  padding:0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+#about #awteam_foot .team-slider .slick-dots {
+  bottom: 25px !important;
+}
+#about #awteam_foot .swiper-container {
+  width: 100%;
+  max-width: 1140px;
+  height: 100%;
+  margin: 0 auto;
+}
 #about #awteam_foot .container .employee {
-  width: 30%;
+  max-width: 250px;
   background-color: #ffffff;
   margin-bottom: 90px;
 }
@@ -574,6 +617,11 @@ footer .footer span {
   position: relative;
   z-index: 1;
 }
+#portfolio #projectimg .portfolio-title {
+  position: relative;
+  bottom: 280px;
+  text-align: left;
+}
 #portfolio #projectimg figure {
   display: flex;
   background-color: #e2e2e2;
@@ -588,17 +636,14 @@ footer .footer span {
   padding-left: 5px;
   font-stretch: condensed;
   letter-spacing: 8px;
-  position: relative;
   background-color: black;
-  bottom: 280px;
   color: white;
   width: 530px;
   height: 50px;
 }
 #portfolio #projectimg p {
-  position: relative;
-  bottom: 250px;
-  right: 370px;
+  margin-top: 25px;
+  padding-left: 60px;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
@@ -781,6 +826,10 @@ footer .footer span {
   background-color: #f6f6f8;
   justify-content: flex-end;
 }
+#blog #blogheading .blog-title {
+  position: relative;
+  bottom: 280px;
+}
 #blog #blogheading .blog-name {
   font-family: 'Roboto light', sans-serif;
   font-size: 2.3em;
@@ -790,18 +839,15 @@ footer .footer span {
   padding-left: 5px;
   font-stretch: condensed;
   letter-spacing: 8px;
-  position: relative;
   background-color: black;
-  bottom: 280px;
-  right: 10px;
   color: white;
   width: 530px;
   height: 50px;
 }
 #blog #blogheading p {
-  position: relative;
-  bottom: 250px;
-  right: 350px;
+  margin-top: 25px;
+  padding-left: 60px;
+  text-align: left;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
@@ -894,15 +940,23 @@ footer .footer span {
   color: black;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h {
-  background-color: #fff;
+  background: url(/img/blog1.jpg);
+  background-size: 160%;
+  background-repeat: no-repeat;
+  background-position-x: 30%;
   cursor: pointer;
   margin-bottom: 20px;
   overflow: hidden;
   width: 100%;
-  height: 265px;
+  transition: .3s ease;
+  /* height: 265px; */
 }
 #blog #blogmain .container article .first_col_news .blog_block_h .bgi {
   background-color: black;
+  position: absolute;
+  max-width: 317px;
+  height: 100%;
+  opacity: .5;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h .bgi img {
   position: relative;
@@ -914,14 +968,13 @@ footer .footer span {
   transition: .5s ease;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h .block_text {
-  position: relative;
   opacity: 0;
-  padding: 20px;
-  margin-top: 20px;
+  background: rgba(0, 0, 0, .5);
+  padding: 40px 20px 20px;
   text-align: left;
-  bottom: 298px;
   overflow: hidden;
   min-height: 265px;
+  transition: .5s ease;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h .block_text h5 {
   color: white;
@@ -943,9 +996,9 @@ footer .footer span {
 #blog #blogmain .container article .first_col_news .blog_block_h .block_text .fa-heart:hover {
   color: black;
 }
-#blog #blogmain .container article .first_col_news .blog_block_h:hover .bgi img {
-  opacity: .3;
-  transform: scale(1.3);
+#blog #blogmain .container article .first_col_news .blog_block_h:hover {
+  transition: .5s ease;
+  background-size: 220%;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h:hover .block_text {
   opacity: 1;
@@ -1104,11 +1157,11 @@ footer .footer span {
   text-decoration: none;
   transition: .5s ease;
 }
-#blog #blogmain .container aside .tags .tags-links a:hover {
+/* #blog #blogmain .container aside .tags .tags-links a:hover {
   background-color: black;
   color: white;
   border: none;
-}
+} */
 #blog #blogmain .container aside .tags .tags-links a:focus {
   background-color: black;
   color: white;
@@ -1160,6 +1213,10 @@ footer .footer span {
 #content #contentheading .container {
   width: 100%;
 }
+#content #contentheading .content-title {
+  position: relative;
+  bottom: 280px;
+}
 #content #contentheading .container .content-name {
   font-family: 'Roboto light', sans-serif;
   font-size: 2.3em;
@@ -1169,23 +1226,20 @@ footer .footer span {
   padding-left: 5px;
   font-stretch: condensed;
   letter-spacing: 8px;
-  position: relative;
   background-color: black;
-  left: 45px;
-  bottom: 280px;
   color: white;
   width: 400px;
   height: 50px;
 }
 #content #contentheading .container p {
-  position: relative;
-  bottom: 250px;
-  right: 390px;
+  margin-top: 25px;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 200px;
+  padding-left: 50px;
+  text-align: left;
 }
 #content #info_and_inputs .container {
   text-align: start;
@@ -1344,6 +1398,7 @@ footer .footer span {
     overflow: hidden;
   }
   #home #slides {
+    display: none;
     justify-content: center;
     max-width: 100%;
     display: block;
@@ -1353,7 +1408,7 @@ footer .footer span {
     display: none;
   }
   #home #slides #slider_wrapper {
-    display: block;
+    display: none;
     width: 100%;
   }
   #home #slides #slider_wrapper #first_slider img {
@@ -1443,12 +1498,15 @@ footer .footer span {
     width: 100%;
     height: 100%;
   }
+  #about #welcomeimg .about-title {
+    bottom: 140px;
+  }
   #about #welcomeimg .about-name {
     position: relative;
     margin: 0 auto;
     color: white;
     left: 0px;
-    bottom: 120px;
+    /* bottom: -150px; */
     background-color: black;
     width: 80%;
     height: auto;
@@ -1648,6 +1706,9 @@ footer .footer span {
     margin-top: 10px;
     margin-bottom: 30px;
   }
+  #portfolio {
+    overflow: hidden;
+  }
   #portfolio #projectimg {
     position: relative;
     z-index: 1;
@@ -1656,12 +1717,12 @@ footer .footer span {
     width: 100%;
     height: 100%;
   }
+  #portfolio #projectimg .portfolio-title {
+    bottom: 140px;
+  }
   #portfolio #projectimg .project-name {
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 120px;
     background-color: black;
     width: 80%;
     height: auto;
@@ -1742,12 +1803,12 @@ footer .footer span {
     width: 100%;
     height: 10em;
   }
+  #blog #blogheading .blog-title {
+    bottom: 140px;
+  }
   #blog #blogheading .blog-name {
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 110px;
     background-color: black;
     width: 80%;
     height: auto;
@@ -1790,12 +1851,12 @@ footer .footer span {
     width: 100%;
     height: 100%;
   }
+  #content #contentheading .content-title {
+    bottom: 140px;
+  }
   #content #contentheading .container .content-name {
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 120px;
     background-color: black;
     width: 60%;
     height: auto;
@@ -1934,7 +1995,9 @@ footer .footer span {
     font-weight: 800;
     color: #808080;
     position: fixed;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 57px;
     z-index: 4;
     right: -65%;
@@ -1972,6 +2035,10 @@ footer .footer span {
   menu .footer {
     text-align: center;
     color: black;
+  }
+  menu .author-data {
+    max-height: 180px;
+    height: 100%;
   }
   #home {
     overflow: hidden;
@@ -2261,7 +2328,8 @@ footer .footer span {
   }
   #about #awteam_foot .container .employee {
     width: 80%;
-    margin-left: 10%;
+    max-width: 180px;
+    /* margin-left: 10%; */
     background-color: #ffffff;
     margin-bottom: 50px;
   }
@@ -2503,7 +2571,9 @@ footer .footer span {
     font-weight: 800;
     color: #808080;
     position: fixed;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-top: 57px;
     z-index: 4;
     right: -65%;
@@ -2542,6 +2612,10 @@ footer .footer span {
     text-align: center;
     color: black;
   }
+  menu .author-data {
+    height: 100%;
+    max-height: 180px;
+  }
   #home {
     overflow: hidden;
   }
@@ -2550,7 +2624,7 @@ footer .footer span {
     justify-content: center;
     max-width: 100%;
     display: block;
-    height: 370px;
+    max-height: 300px;
   }
   #home #slides button {
     display: none;
@@ -2564,9 +2638,10 @@ footer .footer span {
   }
   #home #slides #slider_wrapper {
     display: flex;
-    width: 200%;
+    max-height: 300px;
+    /* width: 200%; */
   }
-  #home #slides #slider_wrapper #first_slider {
+  /* #home #slides #slider_wrapper #first_slider {
     width: 100%;
   }
   #home #slides #slider_wrapper #first_slider img {
@@ -2580,14 +2655,11 @@ footer .footer span {
     display: block;
     max-width: 100%;
     height: 87%;
-  }
+  } */
   #home #slides #slider_wrapper .company-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -2595,19 +2667,17 @@ footer .footer span {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 7px;
+    /* padding-top: 7px;
     padding-left: 5px;
-    padding-bottom: 7px;
+    padding-bottom: 7px; */
     font-stretch: condensed;
     letter-spacing: 8px;
   }
   #home #slides #slider_wrapper p {
-    position: relative;
     font-size: .8em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -2673,19 +2743,15 @@ footer .footer span {
     z-index: 1;
   }
   #about #welcomeimg figure {
-    display: block;
     width: 100%;
   }
   #about #welcomeimg figure img {
-    opacity: .7;
+    opacity: .5;
   }
   #about #welcomeimg .about-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -2700,14 +2766,13 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #about #welcomeimg p {
-    position: relative;
+    margin-top: 10px;
     font-size: .8em;
+    padding-left: 0px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -2858,7 +2923,8 @@ footer .footer span {
   }
   #about #awteam_foot .container .employee {
     width: 80%;
-    margin-left: 10%;
+    max-width: 200px;
+    /* margin-left: 10%; */
     background-color: #ffffff;
     margin-bottom: 50px;
   }
@@ -2901,15 +2967,13 @@ footer .footer span {
     width: 100%;
   }
   #portfolio #projectimg figure img {
+    opacity: .5;
     width: 100%;
   }
   #portfolio #projectimg .project-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -2924,14 +2988,13 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #portfolio #projectimg p {
-    position: relative;
     font-size: .8em;
+    margin-top: 10px;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    padding-left: 0px;
     letter-spacing: 5px;
-    bottom: 230px;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3006,11 +3069,8 @@ footer .footer span {
   }
   #blog #blogheading .blog-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -3025,19 +3085,21 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #blog #blogheading p {
-    position: relative;
+    margin-top: 10px;
+    padding-left: 0px;
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
   #blog #blogmain .container {
     width: 100%;
+  }
+  #blog #blogheading .blog-title {
+    bottom: 230px;
   }
   #blog #blogmain .container article .first_col_news {
     width: 100%;
@@ -3078,16 +3140,17 @@ footer .footer span {
     display: block;
     width: 100%;
   }
+  #content #contentheading .content-title {
+    bottom: 230px;
+  }
   #content #contentheading figure img {
     width: 100%;
+    opacity: .5;
   }
   #content #contentheading .content-name {
     display: block;
-    position: relative !important;
     margin: 0 auto !important;
     color: white;
-    left: 0px !important;
-    bottom: 230px !important;
     background-color: black;
     width: 50% !important;
     height: auto !important;
@@ -3102,14 +3165,13 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #content #contentheading p {
-    position: relative !important;
+    margin-top: 10px;
     font-size: .8em;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 0px !important;
     text-align: center !important;
     letter-spacing: 5px;
-    bottom: 230px !important;
-    left: 5px !important;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3220,9 +3282,9 @@ footer .footer span {
   }
   #home #slides #slider_wrapper {
     display: flex;
-    width: 200%;
+    /* width: 200%; */
   }
-  #home #slides #slider_wrapper #first_slider {
+  /* #home #slides #slider_wrapper #first_slider {
     width: 100%;
   }
   #home #slides #slider_wrapper #first_slider img {
@@ -3236,14 +3298,11 @@ footer .footer span {
     display: block;
     max-width: 100%;
     height: 87%;
-  }
+  } */
   #home #slides #slider_wrapper .company-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 320px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -3251,19 +3310,17 @@ footer .footer span {
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 7px;
+    /* padding-top: 7px;
     padding-left: 5px;
-    padding-bottom: 7px;
+    padding-bottom: 7px; */
     font-stretch: condensed;
     letter-spacing: 8px;
   }
   #home #slides #slider_wrapper p {
-    position: relative;
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 320px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3331,19 +3388,15 @@ footer .footer span {
     z-index: 1;
   }
   #about #welcomeimg figure {
-    display: block;
     width: 100%;
   }
   #about #welcomeimg figure img {
-    opacity: .7;
+    opacity: .5;
   }
   #about #welcomeimg .about-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 80%;
     height: auto;
@@ -3358,15 +3411,13 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #about #welcomeimg p {
-    position: relative;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     color: black;
-    left: 5px;
+    padding-left: 0px;
+    text-align: center;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3519,13 +3570,14 @@ footer .footer span {
   }
   #about #awteam_foot .container .employee {
     width: 80%;
-    margin-left: 20%;
-    margin-right: 20%;
+    max-width: 240px;
+    /* margin-left: 20%;
+    margin-right: 20%; */
     background-color: #ffffff;
     margin-bottom: 50px;
   }
   #about #awteam_foot .container .employee img {
-    width: 310px;
+    /* width: 310px; */
     background-color: #eeeeee;
     background-size: 100%;
     margin-bottom: 8%;
@@ -3667,11 +3719,8 @@ footer .footer span {
   }
   #blog #blogheading .blog-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 80%;
     height: auto;
@@ -3686,14 +3735,12 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #blog #blogheading p {
-    position: relative;
+    padding-left: 0px;
     font-size: 1.2em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     color: black;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3744,11 +3791,8 @@ footer .footer span {
   }
   #content #contentheading .content-name {
     display: block;
-    position: relative !important;
     margin: 0 auto !important;
     color: white;
-    left: 0px !important;
-    bottom: 230px !important;
     background-color: black;
     width: 80%;
     height: auto;
@@ -3763,14 +3807,12 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #content #contentheading p {
-    position: relative;
     font-size: 1.2em !important;
     text-transform: uppercase;
     text-align: center !important;
+    padding-left: 0px !important;
     letter-spacing: 5px;
-    bottom: 230px !important;
     color: black;
-    left: 5px !important;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3859,7 +3901,7 @@ footer .footer span {
     justify-content: center;
     max-width: 100%;
     display: block;
-    height: 600px;
+    max-height: 450px;
   }
   #home #slides button {
     display: none;
@@ -3873,9 +3915,8 @@ footer .footer span {
   }
   #home #slides #slider_wrapper {
     display: flex;
-    width: 200%;
   }
-  #home #slides #slider_wrapper #first_slider {
+  /* #home #slides #slider_wrapper #first_slider {
     width: 100%;
   }
   #home #slides #slider_wrapper #first_slider img {
@@ -3889,14 +3930,11 @@ footer .footer span {
     display: block;
     max-width: 100%;
     height: 87%;
-  }
+  } */
   #home #slides #slider_wrapper .company-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 320px;
     background-color: black;
     width: 70%;
     height: auto;
@@ -3911,12 +3949,10 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #home #slides #slider_wrapper p {
-    position: relative;
     font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 320px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -3984,22 +4020,18 @@ footer .footer span {
     z-index: 1;
   }
   #about #welcomeimg figure {
-    display: block;
     width: 100%;
   }
   #about #welcomeimg figure img {
     opacity: .7;
   }
   #about #welcomeimg p {
-    position: relative;
     font-size: 1.2em;
+    padding-left: 60px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 280px;
     color: black;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4035,14 +4067,10 @@ footer .footer span {
     opacity: 1;
   }
   #portfolio #projectimg p {
-    position: relative;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 270px;
     color: black;
-    left: -15px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4116,11 +4144,8 @@ footer .footer span {
   }
   #blog #blogheading .blog-name {
     display: block;
-    position: relative;
     margin: 0 auto;
     color: white;
-    left: 0px;
-    bottom: 230px;
     background-color: black;
     width: 80%;
     height: auto;
@@ -4135,14 +4160,12 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #blog #blogheading p {
-    position: relative;
     font-size: 1.2em;
+    padding-left: 0px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     color: black;
-    left: 5px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4192,11 +4215,8 @@ footer .footer span {
   }
   #content #contentheading .content-name {
     display: block;
-    position: relative !important;
     margin: 0 auto !important;
     color: white;
-    left: 0px !important;
-    bottom: 230px !important;
     background-color: black;
     width: 80%;
     height: auto;
@@ -4211,14 +4231,12 @@ footer .footer span {
     letter-spacing: 8px;
   }
   #content #contentheading p {
-    position: relative;
     font-size: 1.2em !important;
     text-transform: uppercase;
-    text-align: center !important;
     letter-spacing: 5px;
-    bottom: 230px !important;
+    padding-left: 0px !important;
+    text-align: center !important;
     color: black;
-    left: 5px !important;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4248,24 +4266,23 @@ footer .footer span {
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
+  #home #slides #slider_wrapper {
+    max-height: 585px;
+  }
   #about #welcomeimg {
     width: 100%;
     position: relative;
     z-index: 1;
   }
   #about #welcomeimg figure {
-    display: block;
     width: 100%;
   }
   #about #welcomeimg p {
-    position: relative;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
+    padding-left: 60px;
     letter-spacing: 5px;
-    bottom: 280px;
     color: black;
-    right: 100px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4281,14 +4298,10 @@ footer .footer span {
     opacity: 1;
   }
   #portfolio #projectimg p {
-    position: relative;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 270px;
     color: black;
-    right: 250px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4297,14 +4310,10 @@ footer .footer span {
     z-index: 1;
   }
   #blog #blogheading p {
-    position: relative;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     color: black;
-    right: 250px;
     font-weight: 200px;
     z-index: 1;
   }
@@ -4325,15 +4334,26 @@ footer .footer span {
     z-index: 1;
   }
   #content #contentheading p {
-    position: relative;
     font-size: 1.2em;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 5px;
-    bottom: 230px;
     color: black;
-    right: 250px !important;
     font-weight: 200px;
     z-index: 1;
   }
+}
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  #home #slides #slider_wrapper {
+    max-height: 685px;
+  }
+}
+
+.no-scroll {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .7;
+  z-index: 3;
 }

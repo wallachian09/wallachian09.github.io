@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/slick.css">
+    <link rel="stylesheet" href="libs/slick-theme.css">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="libs/buttons.css">
+    <link rel="stylesheet" href="libs/remodal/dist/remodal.css">
+    <link rel="stylesheet" href="libs/remodal/dist/remodal-default-theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>TISA</title>
+  </head>
+  <body>
+    <div class="wrapping remodal-bg">
+      <header>
+        <div class="first_row">
+          <div class="container">
+            <div class="row">
+              <div class="logo"><a href="#"><img src="img/LOGO_TISA.jpg" alt="В Главную"></a></div>
+              <div class="contacts">
+                <div class="tel"><a href="+380634331046">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <rect width="30" height="30" fill="url(#pattern0)"></rect>
+                      <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                          <use xlink:href="#image0" transform="scale(0.00480769)"></use>
+                        </pattern>
+                        <image id="image0" width="208" height="208" xlink:href="data:image/png;base64,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"></image>
+                      </defs>
+                    </svg></a>
+                  <div class="tel_numbers"><span>380</span>
+                    <div class="numbers_col">
+                      <div class="numbers_numberOne"><a href="+380634331046">634331046</a></div>
+                      <div class="numbers_numberTwo"><a href="+380680200660">680200660</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="searching_panel">
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2 off" id="search_area" type="search" aria-label="Search"><i class="btn search" id="search">
+                    <svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="15.0146" cy="14.9297" r="11.1174" transform="rotate(-15 15.0146 14.9297)" stroke="#656565" stroke-width="2"></circle>
+                      <path d="M24.1733 19.3931L40.7157 28.3758" stroke="#656565" stroke-width="3"></path>
+                    </svg></i>
+                </form>
+              </div>
+              <div class="basket">
+                <div class="basket_logo"><a href="#basket"><img src="svg/basket.svg" alt="basket"></a></div>
+                <div class="basket_col">
+                  <div class="basket_prod"><span>Товаров: <span class="sum">0</span></span></div>
+                  <div class="basket_cash"><span class="sum">0.00 грн</span></div>
+                </div>
+              </div>
+              <div class="lang"><a class="UA remodal__a" data-remodal-target="modal">UA</a><a class="RU remodal__a" data-remodal-target="modal">RU</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="remodal" data-remodal-id="modal">
+          <button class="remodal-close" data-remodal-action="close"></button>
+          <h1>Предупреждение</h1>
+          <p>Смена языка произойдёт после перезагрузки страницы. Продолжить?</p><br>
+          <button class="remodal-confirm" data-remodal-action="confirm">Да</button>
+          <button class="remodal-cancel" data-remodal-action="cancel">Нет</button>
+        </div>
+        <div class="second_row">
+          <div class="container">
+            <div class="nav_line">
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse show" id="navbarNav">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item about"><a class="nav-li nav-link" href="#">о нас</a></li>
+                    <li class="nav-item catalog"><a class="nav-li nav-link" href="#">каталог</a></li>
+                    <li class="nav-item new"><a class="nav-li nav-link" href="#">новинки</a></li>
+                    <li class="nav-item articles"><a class="nav-li nav-link" href="#">статьи</a></li>
+                    <li class="nav-item rewievs"><a class="nav-li nav-link" href="#">отзывы</a></li>
+                  </ul>
+                  <div class="navbar-order"><a class="nav-item nav-link order" data-remodal-target="modal_form">быстрый заказ</a></div>
+                  <div class="remodal" data-remodal-id="modal_form">
+                    <h1>Быстрый заказ</h1>
+                    <p>Оставьте свои данные и мы Вам перезвоним.</p>
+                    <form>
+                      <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="inputName">Имя: </label>
+                        <div class="col-sm-8">
+                          <input class="form-control order" type="name" id="inputName" placeholder="Ваше Имя">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label class="col-sm-4 col-form-label" for="inputEmail3">Email/Номер телефона:</label>
+                        <div class="col-sm-8">
+                          <input class="form-control order" type="email" id="inputEmail3" placeholder="Email/Номер телефона">
+                        </div>
+                      </div>
+                      <button class="remodal-confirm order" data-remodal-action="confirm">Отправить</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div id="dropdown"><span class="arrow">&#9660</span></div>
+      </header>
+      <main>
+        <section class="sliderBlock">
+          <div class="slider">
+            <div class="slider_slides">
+              <div class="slider_slide">
+                <div class="slider_bg"><img class="img-fluid" src="img/offer.jpg" alt="Презентация"></div>
+                <div class="slider_text">
+                  <div class="container"><span>ЗАКАЗАТЬ КАЧЕСТВЕННЫЕ ФЛАКОНЫ для косметики оптом</span></div>
+                </div>
+              </div>
+              <div class="slider_slide">
+                <div class="slider_bg"><img class="img-fluid" src="img/offer2.jpg" alt="Презентация"></div>
+                <div class="slider_text">
+                  <div class="container"><span style="color:white">ЗАКАЗАТЬ КАЧЕСТВЕННЫЕ ФЛАКОНЫ для косметики оптом</span></div>
+                </div>
+              </div>
+              <div class="slider_slide">
+                <div class="slider_bg"><img class="img-fluid" src="img/offer3.jpg" alt="Презентация"></div>
+                <div class="slider_text">
+                  <div class="container"><span>ЗАКАЗАТЬ КАЧЕСТВЕННЫЕ ФЛАКОНЫ для косметики оптом</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="catalogBlock">
+          <div class="leaveBlock"><img src="img/leaves.png" alt="leave"></div>
+          <div class="container">
+            <h1>Каталог</h1>
+            <div class="product_blocks"><a href="#product">
+                <div class="product_block wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                  <div class="product_bg"><img src="img/product1.jpg" alt="Продукт1"></div>
+                  <div class="product_text"><span>Тара косметическая</span></div>
+                </div></a><a href="#product">
+                <div class="product_block wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="product_bg"><img src="img/product2.jpg" alt="Продукт2"></div>
+                  <div class="product_text"><span>Масла</span></div>
+                </div></a><a href="#product">
+                <div class="product_block wow slideInLeft" data-wow-duration="1s" data-wow-delay=".5s">
+                  <div class="product_bg"><img src="img/product3.jpg" alt="Продукт3"></div>
+                  <div class="product_text"><span>Натуральная косметика</span></div>
+                </div></a><a href="#product">
+                <div class="product_block wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
+                  <div class="product_bg"><img src="img/product4.jpg" alt="Продукт4"></div>
+                  <div class="product_text"><span>Косметические ингредиенты</span></div>
+                </div></a></div>
+          </div>
+        </section>
+        <section class="newBlock">
+          <div class="container">
+            <h1>Новинки и акции</h1>
+            <div class="newproducts">
+              <div class="row">
+                <div class="newprod wow bounceIn" data-wow-duration="1s" data-wow-delay=".5s"><img src="img/productmin1.jpg" alt="Новый Продукт1"></div>
+                <div class="newprod wow bounceIn" data-wow-duration="1s" data-wow-delay="1s"><img src="img/productmin2.jpg" alt="Новый Продукт2"></div>
+                <div class="newprod wow bounceIn" data-wow-duration="1s" data-wow-delay="1s"><img src="img/productmin3.jpg" alt="Новый Продукт3"></div>
+                <div class="newprod wow bounceIn" data-wow-duration="1s" data-wow-delay=".5s"><img src="img/productmin4.jpg" alt="Новый Продукт4"></div>
+                <div class="newprod wow bounceIn" data-wow-duration="1s" data-wow-delay="1s"><img src="img/productmin5.jpg" alt="Новый Продукт5"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="reviewBlock">
+          <div class="leaveBlock_second"><img src="img/leaves2.png" alt="Leave"></div>
+          <div class="container">
+            <h1>Отзывы</h1>
+            <div class="review_slider">
+              <div class="review_slide">
+                <div class="review_text">
+                  <p>Товар отличного качества. Цены просто супер!...</p>
+                </div>
+                <div class="review_name"><span>Светлана</span></div>
+                <div class="review_stars">
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="review_slide">
+                <div class="review_text">
+                  <p>Товар отличного качества. Цены просто супер!...</p>
+                </div>
+                <div class="review_name"><span>Вера</span></div>
+                <div class="review_stars">
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="review_slide">
+                <div class="review_text">
+                  <p>Товар отличного качества. Цены просто супер!...</p>
+                </div>
+                <div class="review_name"><span>Денис</span></div>
+                <div class="review_stars">
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="review_slide">
+                <div class="review_text">
+                  <p>Товар отличного качества. Цены просто супер!...</p>
+                </div>
+                <div class="review_name"><span>Денис</span></div>
+                <div class="review_stars">
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                  <svg class="star" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.92935 0L11.0373 6.48756L17.8587 6.48756L12.3401 10.4971L14.448 16.9847L8.92935 12.9751L3.41071 16.9847L5.51865 10.4971L0 6.48756L6.82143 6.48756L8.92935 0Z" fill="#345724"></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="articleBlock wow bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+          <div class="container">
+            <h1>Статьи</h1>
+            <article><a href="#article">
+                <div class="block_article">
+                  <div class="article_img"><img src="img/articleimg.jpg" alt="Статья"></div>
+                  <div class="article_text"><span class="head">КАК ПРАВИЛЬНО ХРАНИТЬ ДУХИ: 5 ГЛАВНЫХ ПРАВИЛ</span>
+                    <p>Хотим расстроить тех, кто хранит свой аромат на прикроватном столике в комнате с хорошим светом. Это просто недопустимо,.. </p>
+                  </div>
+                </div></a></article>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer_inlineOne">
+          <div class="logo"><a href="#"><img src="svg/LOGO_TISA_WHITE.svg" alt="В Главную"></a></div>
+          <div class="contacts">
+            <div class="tel"><img src="svg/phonecall.svg" alt="Телефон">
+              <div class="tel_numbers"><span>380</span>
+                <div class="numbers_col">
+                  <div class="numbers_numberOne"><a href="+380634331046">634331046</a></div>
+                  <div class="numbers_numberTwo"><a href="+380680200660">680200660</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="socNet">
+            <div class="inline_links">
+              <div class="link_fb"><a href="#facebook"><img src="svg/facebook.svg" alt="Facebook"></a></div>
+              <div class="link_inst"><a href="#instagram"><img src="svg/instagram.svg" alt="Instagram"></a></div>
+              <div class="link_ytb"><a href="#youtube"><img src="svg/youtube.svg" alt="YouTube"></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="footer_inlineTwo">
+          <address>© 2019-2020 Tasa.ua - Тара оптом для косметики и парфюмерии Все права защищены. Копирование материалов возможно только при согласии собственников сайта.</address>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" defer integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="libs/remodal/dist/remodal.min.js" defer></script>
+    <script src="libs/wow/dist/wow.min.js"></script>
+    <script src="js/common.js" defer></script>
+    <script src="js/libs.min.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" defer integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js" defer></script>
+    <script src="libs/remodal/dist/remodal.min.js" defer></script>
+    <script src="libs/wow/dist/wow.min.js"></script>
+    <script src="js/common.js" defer></script>
+  </body>
+</html>

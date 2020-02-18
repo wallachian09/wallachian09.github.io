@@ -41,40 +41,14 @@ $(document).ready(function () {
         });
     });
 });
-
-$(document).ready(function(){
-    $('.wheel').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: '<div>&#9650</div>' ,
-        nextArrow: '<div>&#9660</div>',
-        vertical: true,
-        verticalSwiping: true,
-        infinite: true,
-        mobileFirst: true,
-        responsive: [
-            {
-                breakpoint: 180,
-                settings: {
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    vertical: true,
-                    verticalSwiping: true,
-                    infinite: true,
-                }
-            },
-
-            {
-                breakpoint: 315,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                }
-            }
-        ]
-    })
-});
+var handleMatchMedia = function(mediaQuery) {
+if (mediaQuery.matches) {
+        showShop ();
+    } else {}
+},
+mql = window.matchMedia('all and (min-width: 575px)');
+handleMatchMedia(mql);
+mql.addListener(handleMatchMedia);
 
 $(document).ready(function () {
     $('#newgen').addClass("hidden").viewportChecker({

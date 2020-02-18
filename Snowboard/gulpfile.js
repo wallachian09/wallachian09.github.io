@@ -8,7 +8,6 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     del = require('del'),
     imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'); 
 
 gulp.task('sass', function() {
@@ -89,14 +88,14 @@ gulp.task('prebuild', async function() {
     var buildCss = gulp.src('src/css/*.css')
     .pipe(gulp.dest('dist/css'))
 
-    var buildFonts = gulp.src('src/fonts/**/*')
+    var buildFonts = gulp.src('src/fonts/*')
     .pipe(gulp.dest('dist/fonts'))
 
-    var buildJs = gulp.src('src/js/**/*')
+    var buildJs = gulp.src('src/js/*')
     .pipe(gulp.dest('dist/js'))
 
-    //var buildImg = gulp.src('src/img/*')
-    //.pipe(gulp.dest('dist/img'))
+    var buildImg = gulp.src('src/img/*')
+    .pipe(gulp.dest('dist/img'))
 
     var buildHtml = gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))

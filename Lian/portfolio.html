@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,thin,light" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery-3.4.0.min.js" defer></script>
-    <script type="text/javascript" src="js/script.js" defer></script>
     <title>Lian</title>
 </head>
 <body>
@@ -38,7 +38,9 @@
             <li type="none"><a href="portfolio.html" onclick="showPortfolio()">portfolio</a></li>
             <li type="none"><a href="blog.html" onclick="showBlog()">blog</a></li>
             <li type="none" style="border-bottom: 1px solid silver;"><a href="contact.html" onclick="showContent()">contact</a></li>
-            <hr class="hr">
+            <!-- <hr class="hr"> -->
+        </ul>
+        <div class="author-data">
             <div id="icons">
                 <div class="icons8-facebook-f">
                     <a href="https://uk-ua.facebook.com/"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
@@ -65,7 +67,7 @@
             </div>
             <hr>
             <div class="footer">©2019 <span> training page </span> by valeriy holovanov. all rights reserved</div>
-        </ul>
+        </div>
     </menu>
     <main>
         <div id="portfolio">
@@ -73,9 +75,11 @@
                 <figure>
                     <img src="img/proj1.png" alt="project">
                 </figure>
-                <div class="container">
-                    <div class="project-name">latest projects</div>
-                    <p>we deliver quality</p>
+                <div class="portfolio-title">
+                    <div class="container">
+                        <div class="project-name">latest projects</div>
+                        <p>we deliver quality</p>
+                    </div>
                 </div>
             </section>
             <section id="second_menu">
@@ -153,6 +157,12 @@
         </div>
         <div class="footer">©2019 <span> training page </span> by valeriy holovanov. all rights reserved</div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script src="/js/script.js"></script>
 </body>
 </html>
