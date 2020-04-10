@@ -940,7 +940,7 @@ footer .footer span {
   color: black;
 }
 #blog #blogmain .container article .first_col_news .blog_block_h {
-  background: url(/img/blog1.jpg);
+  background: url(../img/blog1.jpg);
   background-size: 160%;
   background-repeat: no-repeat;
   background-position-x: 30%;
